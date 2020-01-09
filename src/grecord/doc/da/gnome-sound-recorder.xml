@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.5.2">
+<!ENTITY manrevision "2.5">
+<!ENTITY date "February 2004">
+<!ENTITY app "Sound Recorder">
+<!ENTITY ug "GNOME Desktop User Guide">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual for Lydoptager version 2.5</title>       
+
+    <copyright> 
+      <year>2002</year>
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright><copyright><year>2009.</year><holder>Joe Hansen (joedalton2@yahoo.dk)</holder></copyright> 
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+    <abstract role="description">
+      <para>Lydoptager er et simpelt program til at optage og afspille forskellige lydfiler</para>
+    </abstract>
+
+    <publisher> 
+      <publishername>GNOME-dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tilladelse er givet til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver senere version udgivet af Free Software Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en kopi af GFDL her <ulink type="help" url="ghelp:fdl">link</ulink> eller i filen COPYING-DOCS som distribueres sammen med denne manual.</para>
+         <para>Denne manual er en del af den samling af GNOME-manualer som udgives under GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet i afsnit 6 af licensen.</para>
+
+	<para>En stor del af de navne som anvendes af firmaer til at identificere deres produkter og tjenester hævdes som værende varemærker. Hvor disse navne fremgår i en hvilken som helst GNOME-dokumentation, og medlemmerne af GNOME-dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse navne vist med store bogstaver eller stort begyndelsesbogstav.</para>
+
+	<para>DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <orderedlist>
+		<listitem>
+		  <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE ANSVARSFRASKRIVELSE OG</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Sun</firstname> 
+	<surname>GNOME-dokumentationshold</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname> 
+	  <address/> 
+	</affiliation> 
+      </author> 
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+    <revhistory>
+      <revision> 
+			<revnumber>Manual for Lydoptager version 2.5</revnumber> 
+			<date>February 2004</date> 
+			<revdescription> 
+	  			<para role="author">Sun GNOME-dokumentationshold</para>
+	  			<para role="publisher">GNOME-dokumentationsprojekt</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Lydoptagermanual version 2.4</revnumber> 
+			<date>September 2003</date> 
+			<revdescription> 
+	  			<para role="author">Sun GNOME-dokumentationshold</para>
+	  			<para role="publisher">GNOME-dokumentationsprojekt</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Lydoptagermanual version 2.3</revnumber> 
+			<date>Januar 2003</date> 
+			<revdescription> 
+	  			<para role="author">Sun GNOME-dokumentationshold</para>
+	  			<para role="publisher">GNOME-dokumentationsprojekt</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Lydoptagermanual version 2.2</revnumber> 
+			<date>August 2002</date> 
+			<revdescription> 
+	  			<para role="author">Sun GNOME-dokumentationshold</para>
+	  			<para role="publisher">GNOME-dokumentationsprojekt</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Lydoptagermanual version 2.1</revnumber> 
+			<date>Juni 2002</date> 
+			<revdescription> 
+	  			<para role="author">Sun GNOME-dokumentationshold</para>
+	  			<para role="publisher">GNOME-dokumentationsprojekt</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Lydoptagermanual version 2.0</revnumber> 
+			<date>Maj 2002</date> 
+			<revdescription> 
+	  			<para role="author">Sun GNOME-dokumentationshold</para>
+	  			<para role="publisher">GNOME-dokumentationsprojekt</para>
+			</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Denne manual beskriver version 2.5.2 af Lydoptager.</releaseinfo> 
+    <legalnotice> 
+      <title>Tilbagemeldinger</title> 
+      <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende Lydoptager eller denne manual så følg vejledningen på siden <ulink url="ghelp:user-guide?feedback-bugs" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm> 
+    <primary>Lydoptager</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="grecord-introduction"> 
+    <title>Introduktion</title> 
+    <para>Programmet <application>Lydoptager</application> gør dig i stand til at optage og afspille lydfilerne <filename>.flac</filename>, <filename>.ogg</filename> (OGG-lyd, eller <filename>.oga</filename>) og <filename>.wav</filename>.</para>
+  </sect1>
+
+  <sect1 id="grecord-getting-started">
+    <title>Kom i gang</title> 
+
+    <para>Du kan starte <application>Lydoptager</application> på følgende måder:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Menuen <guilabel>Programmer</guilabel></term>
+    		<listitem>
+                  <para>Vælg <menuchoice><guisubmenu>Multimedie</guisubmenu><guimenuitem>Lydoptager</guimenuitem></menuchoice>.</para> 
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Kommandolinje</term>
+    		<listitem>
+    		<para>Udfør den følgende kommando: <command>gnome-sound-recorder</command></para>
+    		<para> 		 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+
+    <para>Når du starter <application>Lydoptager</application>, vises det følgende vindue.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="grecord-fig"> 
+	<title>Vindue for Lydoptager</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject>
+	    <imagedata fileref="figures/grecord_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Vis lydoptagers hovedvindue. Indeholder menubjælke, værktøjsbjælke, statuslinje, og statusbjælke.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="grecord-usage"> 
+    <title>Anvendelse</title>
+
+    <sect2 id="grecord-record">
+    	<title>Start af en ny optagelse</title>
+    	<para>Udfør de følgende trin for at begynde på en ny optagelse:</para> 
+    	<orderedlist>
+    		<listitem><para>Vælg <menuchoice><guimenu>Fil</guimenu><guimenuitem>Ny</guimenuitem></menuchoice>.</para></listitem>
+    		<listitem><para>Brug rullegardinlisten <guilabel>Optag som</guilabel> til at vælge en af de følgende optagelsesindstillinger:</para>
+                <itemizedlist>
+                  <listitem>
+                    <para><guilabel>Cd-kvalitet, uden kvalitetstab</guilabel></para>
+                  </listitem>
+                  <listitem>
+                    <para><guilabel>Cd-kvalitet, kvalitetstab</guilabel></para>
+                  </listitem>
+                  <listitem>
+                    <para><guilabel>Stemme</guilabel></para>
+                  </listitem>
+                </itemizedlist>
+</listitem>
+    		<listitem><para>Vælg <menuchoice><guimenu>Handling</guimenu><guimenuitem>Optag</guimenuitem></menuchoice> for at starte en optagelse.</para></listitem>
+    		<listitem><para>Vælg <menuchoice><guimenu>Handling</guimenu><guimenuitem>Stop</guimenuitem></menuchoice> for at stoppe en optagelse.</para></listitem>
+    		<listitem><para>Vælg <menuchoice><guimenu>Handling</guimenu><guimenuitem>Afspil</guimenuitem></menuchoice> for at afspille en optagelse.</para></listitem>
+		<listitem><para>Vælg <menuchoice><guimenu>Fil</guimenu><guimenuitem>Åbn lydstyrkekontrol</guimenuitem></menuchoice>, for at starte lydmikseren.</para></listitem>
+    		<listitem><para>Vælg <menuchoice><guimenu>Fil</guimenu><guimenuitem>Gem som</guimenuitem></menuchoice>, tast så et navn for lydfilen, for at gemme optagelsen.</para></listitem>    		
+    	</orderedlist>
+    </sect2>
+ 
+    <sect2 id="grecord-play">
+    	<title>Afspil en lydfil</title>
+    	<para>Vælg <menuchoice><guimenu>Fil<guimenu><guimenuitem>Åbn</guimenuitem> for at afspille en lydfil. V, og klik derefter . Lydoptager viser varigheden pHandlingAfspil. Statuslinjen bev</guimenu></guimenu></menuchoice></para> 
+    </sect2>  
+ 
+    <sect2 id="grecord-props">
+    	<title>Visning af egenskaber for en fil</title>
+    	<para>Vælg <menuchoice><guimenu>Fil</guimenu><guimenuitem>Filinformation</guimenuitem></menuchoice> for at vise egenskaberne på en fil. <application>Lydoptager</application> viser de følgende informationer for en fil:</para>
+        <variablelist>
+          <varlistentry>
+            <term><guilabel>Filinformation</guilabel></term>
+            <listitem>
+              <para><guilabel>Mappe</guilabel> viser navnet på mappen hvor filen er placeret.</para>
+              <para><guilabel>Filnavn</guilabel> viser navnet på filen.</para>
+              <para><guilabel>Filstørrelse</guilabel> viser størrelsen på filen.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Lydinformation</guilabel></term>
+            <listitem>
+              <para><guilabel>Sanglængde</guilabel> viser længden på lydindholdet i filen.</para>
+              <para><guilabel>Antal kanaler</guilabel> viser antallet af kanaler som lydindholdet blev optaget med.</para>
+              <para><guilabel>Samplingsfrekvens</guilabel> viser den samplingsfrekvens som lydindholdet blev optaget med.</para>
+              <para><guilabel>Bithastighed</guilabel> viser bithastigheden som lydindholdet blev optaget med.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+ 
+    </sect2>  
+    
+  </sect1>
+
+</article>

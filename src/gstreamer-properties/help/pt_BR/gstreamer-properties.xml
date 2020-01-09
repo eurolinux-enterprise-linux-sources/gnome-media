@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.2.2">
+<!ENTITY manrevision "2.4">
+<!ENTITY date "September 2003">
+<!ENTITY app "GStreamer Properties">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="pt_BR">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual de Propriedades do GStreamer V2.4</title>       
+
+    <copyright>
+      <year>2003</year> 
+      <holder>Christian Fredrik Kalager Schaller</holder> 
+    </copyright><copyright><year>2009</year><holder>Krix Apolinário (krixapolinario@gmail.com)</holder></copyright><copyright><year>2009</year><holder>Rodrigo L. M. Flores (mail@rodrigoflores.org)</holder></copyright> 
+
+    <abstract role="description">
+      <para>Propriedades do GStreamer permite você configurar parâmetros relacionados a hardware e multimídia</para>
+    </abstract>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+    <publisher> 
+      <publishername>Projeto de Documentação do GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permissão concedida para copiar, distribuir e/ou modificar este documento sob os termos da GNU Free Documentation License (GFDL), Versão 1.1 ou qualquer versão mais recente publicada pela Free Software Foundation sem Seções Invariantes, sem Textos de Capa Frontal, e sem Textos de Contracapa. Você pode encontrar uma cópia da licença GFDL no <ulink type="help" url="ghelp:fdl">link</ulink> ou no arquivo COPYING-DOCS distribuído com este manual.</para>
+         <para>Este manual é parte da coleção de manuais do GNOME distribuído sob os termos da GFDL. Se você quiser distribuir este manual separadamente desta coleção, você pode fazer-lo adicionando ao manual uma cópia da licença, como descrito na seção 6 desta licença.</para>
+
+	<para>Muitos dos nomes usados por empresas para distinguir seus produtos e serviços são reivindicados como marcas registradas. Onde esses nomes aparecem em qualquer documentação do GNOME e os membros do Projeto de Documentação do GNOME estiverem cientes dessas marcas registradas, os nomes aparecerão impressos em letras maiúsculas ou com iniciais em maiúsculas.</para>
+
+	<para>O DOCUMENTO E VERSÕES MODIFICADAS DO DOCUMENTO SÃO FORNECIDOS SOB OS TERMOS DA GNU FREE DOCUMENTATION LICENSE COM O ENTENDIMENTO ADICIONAL DE QUE: <orderedlist>
+		<listitem>
+		  <para>O DOCUMENTO É FORNECIDO NA BASE "COMO ESTÁ", SEM GARANTIAS DE QUALQUER TIPO, TANTO EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO LIMITADO A, GARANTIAS DE QUE O DOCUMENTO OU VERSÃO MODIFICADA DO DOCUMENTO SEJA COMERCIALIZÁVEL, LIVRE DE DEFEITOS, PRÓPRIO PARA UM PROPÓSITO ESPECÍFICO OU SEM INFRAÇÕES. TODO O RISCO A RESPEITO DA QUALIDADE, EXATIDÃO, E DESEMPENHO DO DOCUMENTO OU VERSÕES MODIFICADAS DO DOCUMENTO É DE SUA RESPONSABILIDADE. SE ALGUM DOCUMENTO OU VERSÃO MODIFICADA SE PROVAR DEFEITUOSO EM QUALQUER ASPECTO, VOCÊ (NÃO O ESCRITOR INICIAL, AUTOR OU QUALQUER CONTRIBUIDOR) ASSUME O CUSTO DE QUALQUER SERVIÇO NECESSÁRIO, REPARO OU CORREÇÃO. ESSA RENÚNCIA DE GARANTIAS CONSTITUI UMA PARTE ESSENCIAL DESTA LICENÇA. NENHUM USO DESTE DOCUMENTO OU VERSÃO MODIFICADA DESTE DOCUMENTO É AUTORIZADO SE NÃO FOR SOB ESSA RENÚNCIA; E</para>
+		</listitem>
+		<listitem>
+		  <para>SOB NENHUMA CIRCUNSTÂNCIA E SOB NENHUMA TEORIA LEGAL, TANTO EM DANO (INCLUINDO NEGLIGÊNCIA), CONTRATO, OU OUTROS, DEVEM O AUTOR, ESCRITOR INICIAL, QUALQUER CONTRIBUIDOR, OU QUALQUER DISTRIBUIDOR DO DOCUMENTO OU VERSÃO MODIFICADA DO DOCUMENTO, OU QUALQUER FORNECEDOR DE ALGUMA DESSAS PARTES, SER CONSIDERADOS RESPONSÁVEIS A QUALQUER PESSOA POR QUALQUER DANO, SEJA DIRETO, INDIRETO, ESPECIAL, ACIDENTAL OU CONSEQÜENCIAL DE QUALQUER INDIVÍDUO, INCLUINDO, MAS NÃO LIMITADO A, DANOS POR PERDA DE BOA VONTADE, TRABALHO PARADO, FALHA OU MAU FUNCIONAMENTO DO COMPUTADOR, OU QUALQUER E TODOS OS OUTROS DANOS OU PERDAS RESULTANTES OU RELACIONADOS AO USO DO DOCUMENTO E VERSÕES MODIFICADAS, MESMO QUE TAL PARTE TENHA SIDO INFORMADA DA POSSIBILIDADE DE TAIS DANOS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Christian Fredrik</firstname> 
+	<surname>Kalager Schaller</surname> 
+	<affiliation> 
+	  <orgname>gnome.org</orgname> 
+	  <address/> 
+	</affiliation> 
+      </author> 
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+    <revhistory>
+      <revision> 
+			<revnumber>Manual de Propriedades do GStreamer V2.4</revnumber> 
+			<date>Setembro 2003</date> 
+			<revdescription> 
+	  			<para role="author">Christian Fredrik Kalager Schaller</para>
+	  			<para role="publisher">Projeto de Documentação do GNOME</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Manual de Propriedades do GStreamer V1.0</revnumber> 
+			<date>Dezembro 2003</date> 
+			<revdescription> 
+	  			<para role="author">Christian Fredrik Kalager Schaller</para>
+	  			<para role="publisher">Projeto de Documentação do GNOME</para>
+			</revdescription> 
+      </revision>
+         </revhistory> 
+
+    <releaseinfo>Este manual descreve a versão 2.2.2 das Propriedades do GStreamer.</releaseinfo> 
+    <legalnotice> 
+      <title>Feedback</title> 
+      <para>Para relatar um erro ou fazer uma sugestão relacionada ao aplicativo Propriedades do GStreamer ou deste manual, visite a <ulink url="ghelp:gnome-feedback" type="help">página de feedback do GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm> 
+    <primary>Propriedades do GStreamer</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="gstreamer-properties-introduction"> 
+    <title>Introdução</title> 
+    <para>As <application>Propriedades do GStreamer</application> habilitam você a configurar parâmetros relacionados a hardware e sistemas de multimídia em seu sistema. Somente usuários avançados devem normalmente precisar disso, pois distribuidores de sistemas operacionais provavelmente lançam seus sistema com o padrão correto.</para> 
+  </sect1>
+
+  <sect1 id="gstreamer-properties-getting-started">
+    <title>Primeiros Passos</title> 
+
+    <para>Você pode iniciar as <application>Propriedades do GStreamer</application> das seguintes formas:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Menu <guimenu>Aplicativos</guimenu></term>
+    		<listitem>
+    		<para>Escolha <menuchoice><guisubmenu>Preferências</guisubmenu><guimenuitem>Propriedades do Gstreamer</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Linha de comando</term>
+    		<listitem>
+    		<para>Digite <command>gstreamer-properties</command>, em seguida pressione <keycap>Enter</keycap>.</para>
+    		<para> 		 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+
+    <para>Quando você iniciar as <application>Propriedades do GStreamer</application>, a seguinte janela é exibida.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="gstreamer-properties-fig"> 
+	<title>Janela de Propriedados do GStreamer</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject>
+	    <imagedata fileref="figures/gstreamer_properties_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Mostra a janela principal das Propriedades do GStreamer. Contém barra de menu, barra de ferramentas, menu de rolagem para entrada e saída das opções de áudio.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="gstreamer-properties-usage"> 
+    <title>Uso</title>
+	<para>O mini-aplicativo de propriedades do GStreamer oferece quatro menus suspensos em duas abas. Dois são menus suspensos de aúdio e dois de vídeo. Estas escolhas definem o padrão para a maioria das aplicações do GNOME para saída e entrada de som e vídeo.</para>
+  <sect2 id="gstreamer-properties-concepts">
+    	<title>Entendendo as opções do menu</title>
+    	<para>Olhando para a tela para definir opções de aúdio você perceberá que duas sessões são chamadas ralo padrão e fonte padrão. Estes são os termos utilizados na infraestrutura GStreamer para o GNOME descrever para onde os dados são enviados e de onde eles vêm. O ralo padrão é onde, em outras palavras, os aplicativos do GNOME devem jogar sua saída de som, enquanto a fonte padrão é de onde o som vêm.</para>
+	<para>Um motivo pelo qual você talvez queira alterar estas definições é porquê para o Unix existem vários sistemas de aúdios e servidores de som que provavelmente você quer utilizar como saída. Por exemplo alternativas comuns no Linux são o sistemas de som OSS, ALSA e os servidores de som ESD e ARTSd.</para>
+	<para>Por exemplo, se você quer que suas aplicações do GNOME joguem suas saídas de som para o servidor de som ESD, você define o ralo padrão para utilizar o ESD. E se vocẽ deseja que suas aplicações GNOME, que têm capacidade de gravar sons, usem o sistema de som OSS você escolhe o OSS como fonte padrão.</para>
+	<para>Como mencionado em outras partes deste guia do usuário, estas definições são uma ferramenta para usuários avançados que têm necessidades específicas. Como usuário normal você não precisa mexer nelas, já que o fornecedor de sua distribuição de Linux ou Unix já deve tê-la colocado para você nos valores padrões.</para> 
+    	
+    </sect2>
+  </sect1>  
+
+
+</article>

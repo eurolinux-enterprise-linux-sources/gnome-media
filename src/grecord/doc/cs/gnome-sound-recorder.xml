@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.5.2">
+<!ENTITY manrevision "2.5">
+<!ENTITY date "February 2004">
+<!ENTITY app "Sound Recorder">
+<!ENTITY ug "GNOME Desktop User Guide">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Příručka V2.5 k Záznamníku zvuků</title>       
+
+    <copyright> 
+      <year>2002</year>
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright><copyright><year>2009.</year><holder>Mare Černocký (marek@manet.cz)</holder></copyright> 
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+    <abstract role="description">
+      <para>Záznamník zvuků je jednoduchá aplikace na záznam a přehrávání různých zvukových souborů.</para>
+    </abstract>
+
+    <publisher> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Sun</firstname> 
+	<surname>Dokumentační tým GNOME</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname> 
+	  <address/> 
+	</affiliation> 
+      </author> 
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+    <revhistory>
+      <revision> 
+			<revnumber>Příručka V2.5 k Záznamníku zvuků</revnumber> 
+			<date>Únor 2004</date> 
+			<revdescription> 
+	  			<para role="author">Dokumentační tým GNOME firmy Sun</para>
+	  			<para role="publisher">Dokumentační projekt GNOME</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Příručka V2.4 k Záznamníku zvuků</revnumber> 
+			<date>Září 2003</date> 
+			<revdescription> 
+	  			<para role="author">Dokumentační tým GNOME firmy Sun</para>
+	  			<para role="publisher">Dokumentační projekt GNOME</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Příručka V2.3 k Záznamníku zvuků</revnumber> 
+			<date>Leden 2003</date> 
+			<revdescription> 
+	  			<para role="author">Dokumentační tým GNOME firmy Sun</para>
+	  			<para role="publisher">Dokumentační projekt GNOME</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Příručka V2.2 k Záznamníku zvuků</revnumber> 
+			<date>Srpen 2002</date> 
+			<revdescription> 
+	  			<para role="author">Dokumentační tým GNOME firmy Sun</para>
+	  			<para role="publisher">Dokumentační projekt GNOME</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Příručka V2.1 k Záznamníku zvuků</revnumber> 
+			<date>Červen 2002</date> 
+			<revdescription> 
+	  			<para role="author">Dokumentační tým GNOME firmy Sun</para>
+	  			<para role="publisher">Dokumentační projekt GNOME</para>
+			</revdescription> 
+      </revision>
+      <revision> 
+			<revnumber>Příručka V2.0 k Záznamníku zvuků</revnumber> 
+			<date>Květen 2002</date> 
+			<revdescription> 
+	  			<para role="author">Dokumentační tým GNOME firmy Sun</para>
+	  			<para role="publisher">Dokumentační projekt GNOME</para>
+			</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje Záznamník zvuků ve verzi 2.5.2</releaseinfo> 
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci Záznamník zvuků nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:gnome-feedback" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm> 
+    <primary>Záznamník zvuků</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="grecord-introduction"> 
+    <title>Úvod</title> 
+    <para>Aplikace <application>Záznamník zvuků</application> vám umožňuje zaznamenávat a přehrávat zvukové soubory <filename>.flac</filename>, <filename>.ogg</filename> (OGG audio nebo <filename>.oga</filename>) a <filename>.wav</filename>.</para>
+  </sect1>
+
+  <sect1 id="grecord-getting-started">
+    <title>Začínáme</title> 
+
+    <para><application>Záznamník zvuků</application> můžete spustit následujícími způsoby:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Nabídka <guilabel>Aplikace</guilabel></term>
+    		<listitem>
+                  <para>Zvolte <menuchoice><guisubmenu>Zvuk a video</guisubmenu><guimenuitem>Záznamník zvuků</guimenuitem></menuchoice>.</para> 
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Příkazový řádek</term>
+    		<listitem>
+    		<para>Spusťte následující příkaz: <command>gnome-sound-recorder</command></para>
+    		<para> 		 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+
+    <para>Když spustíte <application>Záznamník zvuků</application>, zobrazí se následující okno.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="grecord-fig"> 
+	<title>Okno Záznamníku zvuků</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject>
+	    <imagedata fileref="figures/grecord_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Ukazuje hlavní okno Záznamníku zvuků. Obsahuje panel nabídek, panel nástrojů, ukazatel průběhu a stavový řádek.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="grecord-usage"> 
+    <title>Použití</title>
+
+    <sect2 id="grecord-record">
+    	<title>Spuštění nového záznamu</title>
+    	<para>Pokud chcete začít zaznamenávat nový zvuk, proveďte následující kroky:</para> 
+    	<orderedlist>
+    		<listitem><para>Zvolte <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Nový</guimenuitem></menuchoice>.</para></listitem>
+    		<listitem><para>Použijte vyskakovací seznam <guilabel>Zaznamenávat jako</guilabel> k volbě jedné z následujících možností záznamu:</para>
+                <itemizedlist>
+                  <listitem>
+                    <para><guilabel>CD kvalita, bezztrátová</guilabel></para>
+                  </listitem>
+                  <listitem>
+                    <para><guilabel>CD kvalita, ztrátová</guilabel></para>
+                  </listitem>
+                  <listitem>
+                    <para><guilabel>Hlas</guilabel></para>
+                  </listitem>
+                </itemizedlist>
+</listitem>
+    		<listitem><para>Zaznamenávání spustíte volbou <menuchoice><guimenu>Ovládaní</guimenu><guimenuitem>Zaznamenávat</guimenuitem></menuchoice>.</para></listitem>
+    		<listitem><para>Zaznamenávání zastavíte volbou <menuchoice><guimenu>Ovládaní</guimenu><guimenuitem>Zastavit</guimenuitem></menuchoice>.</para></listitem>
+    		<listitem><para>Přehrávání záznamu spustíte volbou <menuchoice><guimenu>Ovládaní</guimenu><guimenuitem>Přehrát</guimenuitem></menuchoice>.</para></listitem>
+		<listitem><para>Směšovač zvuku spustíte volbou <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Otevřít ovládání hlasitosti</guimenuitem></menuchoice>.</para></listitem>
+    		<listitem><para>Záznam uložíte volbou <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Uložit jako</guimenuitem></menuchoice> a následným zadáním názvu zvukového souboru.</para></listitem>    		
+    	</orderedlist>
+    </sect2>
+ 
+    <sect2 id="grecord-play">
+    	<title>Přehrávání zvukového souboru</title>
+    	<para>Pokud chcete přehrát zvukový soubor, zvolte <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Otevřít</guimenuitem></menuchoice>. V dialogovém okně <guilabel>Otevřít soubor</guilabel> vyberte zvukový soubor a klikněte na <guibutton>Otevřít</guibutton>. <application>Záznamník zvuků</application> zobrazí pod ukazatelem průběhu délku souboru v minutách a sekundách. Přehrávání spustíte volbou <menuchoice><guimenu>Ovládání</guimenu><guimenuitem>Přehrát</guimenuitem></menuchoice>. Během přehrávání se posouvá ukazatel průběhu.</para> 
+    </sect2>  
+ 
+    <sect2 id="grecord-props">
+    	<title>Zobrazení vlastností souboru</title>
+    	<para>Pokud chcete zobrazit vlastnosti souboru, zvolte <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Vlastnosti</guimenuitem></menuchoice>. <application>Záznamník zvuků</application> zobrazí o souboru následující informace:</para>
+        <variablelist>
+          <varlistentry>
+            <term><guilabel>Informace o souboru</guilabel></term>
+            <listitem>
+              <para><guilabel>Složka</guilabel> zobrazuje název složky, ve které je soubor umístěný.</para>
+              <para><guilabel>Jméno souboru</guilabel> zobrazuje název souboru.</para>
+              <para><guilabel>Velikost souboru</guilabel> zobrazuje velikost souboru.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Informace o zvuku</guilabel></term>
+            <listitem>
+              <para><guilabel>Stopáž souboru</guilabel> zobrazuje délku zvukových dat v souboru.</para>
+              <para><guilabel>Počet kanálů</guilabel> zobrazuje počet kanálů, ve kterých jsou zvuková data zaznamenaná.</para>
+              <para><guilabel>Vzorkovací kmitočet</guilabel> zobrazuje vzorkovací kmitočet, při kterém byla zvuková data zaznamenaná.</para>
+              <para><guilabel>Přenosová rychlost</guilabel> zobrazuje přenosovou rychlost, při které byla zvuková data zaznamenaná.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+ 
+    </sect2>  
+    
+  </sect1>
+
+</article>
